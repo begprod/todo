@@ -1,0 +1,112 @@
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 18px;
+}
+
+.wrapper {
+	width: 768px;
+	margin: 0 auto;
+	padding: 20px 0 50px 0;
+	/* border: 1px solid red; */
+}
+
+.wrapper__head {
+	text-align: center;
+}
+
+.btn {
+	display: inline-block;
+	padding: 5px 10px;
+	background: none;
+	border: none;
+	outline: none;
+	font-size: 14px;
+	color: white;
+	transition: all .3s ease-in-out;
+	cursor: pointer;
+}
+
+.btn:hover {
+	box-shadow: 0 0 3px 0 black;
+}
+
+.todo {
+	/* border: 3px solid hotpink; */
+	padding: 35px 10px;
+	list-style: none;
+	box-shadow: 0 0 5px 1px #ADADAD;
+}
+
+.todo__item {
+	display: flex;
+	flex-direction: row;
+	align-items: center;
+	margin: 0 0 20px 0;
+	padding: 15px;
+	background-color: white;
+	border: 1px solid #e6e6e6;
+	transition: all .3s ease-in-out;
+}
+
+.todo__item--done {
+	opacity: 0.5;
+}
+
+
+.todo__item--done .btn {
+	background-color: lightgray;
+}
+
+.todo__item--done .todo__label {
+	text-decoration: line-through;
+}
+
+.todo__item--editing {
+	transform: scale(1.2);
+	box-shadow: 0 0 5px 1px #ADADAD;
+}
+
+.todo__item:last-child {
+	margin-bottom: 0;
+}
+
+.todo__checkbox {
+	margin-right: 10px;
+}
+
+.todo__label {
+	max-width: 50%;
+	margin-right: 10px;
+	word-break: break-all;
+}
+
+.todo__input-text {
+	display: none;
+	margin-right: 15px;
+}
+
+.todo__input-text--active {
+	display: block;
+}
+
+.todo__edit {
+	background-color: #30C0B4;
+	margin-right: 10px;
+}
+
+.todo__delete {
+	background-color: red;
+	margin-right: 10px;
+}
+
+.add-form {
+
+}
+
+.add-form__input {
+
+}
+
+.add-form__btn {
+	background-color: #30C0B4;
+}
